@@ -1,0 +1,8 @@
+- name: Configure quartermaster
+  hosts: allinone
+  become: true
+
+  roles:
+    - role: quartermaster
+      quartermaster_channels: "#BonnyCI"
+      quartermaster_nick: "quartermaster"
